@@ -1,0 +1,20 @@
+{
+  "name": "ai-gemini-chatbot",
+  "version": "0.1.0",
+  "description": "Web chatbot prototype with Express.js backend and native JavaScript frontend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

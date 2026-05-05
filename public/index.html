@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini AI Chatbot Interaktif</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>Gemini AI Chatbot</h1>
+        <p>Chat interaktif dengan konteks, jawaban streaming, dan rekomendasi lanjut.</p>
+      </div>
+      <button id="resetBtn" class="secondary-button">Reset Percakapan</button>
+    </header>
+
+    <main class="chat-panel">
+      <section id="chatLog" class="chat-log"></section>
+      <div id="typingIndicator" class="typing-indicator hidden">Gemini AI sedang mengetik...</div>
+    </main>
+
+    <footer class="chat-footer">
+      <div class="quick-actions">
+        <button data-action="ulang" class="action-button">Ulangi jawaban</button>
+        <button data-action="ringkas" class="action-button">Ringkas jawaban</button>
+        <button data-action="lanjut" class="action-button">Tanya lagi</button>
+      </div>
+      <form id="chatForm" class="chat-form">
+        <input id="messageInput" type="text" placeholder="Tulis pesan Anda..." autocomplete="off" />
+        <button type="submit" class="primary-button">Kirim</button>
+      </form>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
